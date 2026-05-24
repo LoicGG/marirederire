@@ -1,0 +1,120 @@
+
+/***********************************************/
+/***********************************************/
+/************* GESTION DES COULEURS*************/
+/***********************************************/
+/***********************************************/
+
+
+/*
+font-family: 'Ephesis', cursive;
+font-family: 'Miltonian', serif;
+*/
+:root {
+    color-scheme: light;
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --header-color:rgb(225, 190, 165);
+    --nav-color: rgb(165, 185, 185);
+    --hero-color: rgb(225, 190, 165);
+    --section1-color: rgb(160, 180, 175);
+    --section2-color: rgb(225, 225, 215);
+    --section3-color: rgb(135, 150, 145);
+    --section4-color: rgb(225, 190, 165);
+    --footer-color: rgb(45, 65, 65);
+    --strange-color:linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    --ciel-color: rgb(22,253,255);
+    --gold-color: linear-gradient(
+        to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+}
+
+
+.light {
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --header-color:rgb(0, 0, 0);
+    --nav-color: transparent;
+    --hero-color: rgb(225, 190, 165);
+    --section1-color: rgb(160, 180, 175);
+    --section2-color: rgb(225, 225, 215);
+    --section3-color: rgb(135, 150, 145);
+    --section4-color: rgb(225, 190, 165);
+    --section5-color: rgb(172, 207, 208);
+    --footer-color: rgb(45, 65, 65);
+    --strange-color:linear-gradient(to top, #D8D9DB 0%, #b39559 80%, #fcfc83 100%);
+    --FCFCFC-color: #FCFCFC;
+    --D6D7D9-color: #D6D7D9;
+    --CECFD1-color: #CECFD1;
+    --FEFEFE-color: rgba(0, 0, 0, 0.5);
+    --neufx3-color: #999;
+    --ciel-color: rgb(44, 152, 220);
+    --image-Sect1Div1: url(content/Tranche\ 1.webp);
+    --image-heroBg: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(content/houseinterior.jpg);
+    --image-magic: url(content/marirederiredorigine.webp);
+    --image-planches: url(content/planchesclaires.webp);
+    --specialiste-color: rgb(255, 255, 255);
+    --specialiste-background-color: rgba(165, 27, 27, 0.9);
+    --ecriture-parchemin: linear-gradient(
+        to right,
+        #462523 0,
+               #cb9b51 22%, 
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+        );
+    --footerText-Color: rgba(255, 255, 255, 1);
+    --filterParchment: grayscale(0%);
+    --slider-color:#FCFCFC;
+    --slider-arrow:var(--black-color);
+    --submit-color:rgb(86, 177, 251);
+    --submitValidated-color:rgb(137, 192, 227);
+    --formBackground-Color:#e4e4e4;
+    --formInput-Color:#ffffff;
+}
+
+.dark {
+    --white-color: rgb(0, 0, 0);
+    --black-color: rgb(255, 255, 255);
+    --header-color:rgb(0, 0, 0);
+    --nav-color: transparent;
+    --hero-color: rgb(225, 190, 165);
+    --section1-color: rgb(160, 180, 175);
+    --section2-color: rgb(225, 225, 215);
+    --section3-color: rgb(135, 150, 145);
+    --section4-color: rgb(225, 190, 165);
+    --section5-color: rgb(172, 207, 208);
+    --footer-color: rgb(45, 65, 65);
+    --strange-color:linear-gradient(to top, #000000 0%, #636262 100%);
+    --FCFCFC-color: #0e0a0a;
+    --D6D7D9-color: #D6D7D9;
+    --CECFD1-color: #232323;
+    --FEFEFE-color: rgba(0, 0, 0, 0.5);
+    --neufx3-color: #999;
+    --ciel-color: rgb(13, 61, 98);
+    --image-Sect1Div1: url(content/Tranche\ 2.webp);
+    --image-heroBg: url(content/houseinteriordark.jpg);
+    --image-magic: url(content/marirederiredorigine.webp);
+    --image-planches: url(content/planchesfoncees.webp);
+    --specialiste-color: rgb(255, 255, 255);
+    --specialiste-background-color: rgb(60, 59, 59);
+    --ecriture-parchemin: solid black;
+    --footerText-Color: rgba(255, 255, 255, 1);
+    --filterParchment: grayscale(100%);
+    --slider-color:#000000;
+    --slider-arrow:var(--black-color);
+    --submit-color:rgb(75, 75, 75);
+    --submitValidated-color:rgb(34, 35, 35);
+    --formBackground-Color:#15172b;
+    --formInput-Color:#303245;
+
+}

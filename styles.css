@@ -1,0 +1,596 @@
+/***********************************************/
+/***********************************************/
+/****************    BRAYWEB    ****************/
+/***************** MAIN STYLES *****************/
+/***********************************************/
+/***********************************************/
+
+/*
+font-family: 'Ephesis', cursive;
+font-family: 'Miltonian', serif;
+*/
+html {
+	scroll-behavior: smooth;
+}
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 16px;
+    font-family: 'Ephesis', cursive;
+}
+
+a, a:visited {
+    display: block;
+    text-decoration: none;
+    text-align: center;/* Centrer les liens dans leur line item */
+}
+
+li {
+    list-style: none;
+}
+/*Uniquement pour les liens du menu*/
+li a {
+        color: var(--black-color);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: cursive;
+    text-align: center;
+    animation: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 200ms;
+}
+
+h3 {
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-family: "tangerine";
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.9;
+}
+
+/***********************************************/
+/***********************************************/
+/***************** ANIMATIONS ******************/
+/***********************************************/
+/***********************************************/
+.slidein {
+    animation-duration: 800ms;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+
+@keyframes move {
+    0%   { rotate: 0deg; }
+    30%  { rotate: 8deg; } 
+    60%  { rotate: -8deg;}
+    100% { rotate: 0deg; }
+}
+/***********************************************/
+/***********************************************/
+/******************  BRAYWEB    ****************/
+/******************  SECTIONS   ****************/
+/***********************************************/
+/***********************************************/
+
+nav {
+    height: 15%;
+    background: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;/**/
+    top: 0; /**/
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+.hero {
+    height: 100%; 
+    width: 100%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-image: var(--image-heroBg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#specialiste {/*en Rénovation intérieure*/
+    color: var(--specialiste-color);
+    background-color: var(--specialiste-background-color);
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 1rem;
+    line-height: 1;
+    width: 80vw;
+    animation-name: slidein;
+    animation-delay: 2s;
+    font-family: 'Gill Sans';
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#background-video {
+    height: 100dvh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: "content/la-caméra-se-déplace-à-travers-une-prairie-alpine-pleine-de-fleurs-colorées-fond-dété-fleuri.mp4";
+}
+
+#magic {
+    content: url(content/marirederiredorigine.webp);
+    width: 60vw;
+    max-width: 60vh;
+    height: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-name: move;
+}
+
+
+
+/**************************************/
+
+/***********************************************/
+/***********************************************/
+/******************  BRAYWEB    ****************/
+/******************  SECTIONS 1 ****************/
+/***********************************************/
+/***********************************************/
+
+
+#section1 {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--section2-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.exemple1 {
+    font-size: 2rem;
+    font-family: tangerine;
+}
+
+
+/**************************************/
+
+/***********************************************/
+/***********************************************/
+/******************  BRAYWEB    ****************/
+/******************  SECTION  2 ****************/
+/***********************************************/
+/***********************************************/
+
+#section2 {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--section1-color);
+    background-image: var(--image-planches);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parchment {
+    position: relative; /* absolute si on veut mettre le svg sur les bords */
+    display: flex;
+    flex-direction: column;
+    max-width: 88vw;
+    width: 350px;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+    background-image: url(content/parchemin.webp);
+    background-size: cover; 
+    text-align: center;
+    padding: 1rem;
+    border-radius: 30px;
+    filter: var(--filterParchment);
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+    font-family: "arial";
+    display: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+/***********************************************/
+/***********************************************/
+/******************  BRAYWEB    ****************/
+/******************  SECTION  3 ****************/
+/***********************************************/
+/***********************************************/
+
+/*SLIDER DES PHOTOS AVANT-APRES*/
+.exemple1,
+.exemple2,
+.exemple3 {
+    width: auto;
+    height: auto;
+}
+
+.container1 {
+    width: 80vw;
+    height: 80vw;
+    max-width: 600px;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    --position1: 50%;
+    margin: 2rem;
+    border-radius: 50px;
+    border: 2px solid var(--white-color);
+    display: flex;
+    text-align: center;
+}
+
+.container2 {
+    width: 80vw;
+    height: 80vw;
+    max-width: 600px;
+    max-height: 600px;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    --position2: 50%;
+    margin: 2rem;
+    border-radius: 50px;
+    border: 2px solid var(--white-color);
+
+}
+
+.container3 {
+    width: 80vw;
+    height: 80vw;
+    max-width: 600px;
+    max-height: 600px;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    --position3: 50%;
+    margin: 2rem;
+    border-radius: 50px;
+    border: 2px solid var(--white-color);
+
+}
+
+.image-container1,
+.image-container2,
+.image-container3 {
+    aspect-ratio: 1/1;
+}
+
+.slider-image1,
+.slider-image2,
+.slider-image3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.image-before1 {
+    position: absolute;
+    inset: 0;
+    width: var(--position1);
+}
+
+.image-before2 {
+    position: absolute;
+    inset: 0;
+    width: var(--position2);
+}
+
+.image-before3 {
+    position: absolute;
+    inset: 0;
+    width: var(--position3);
+}
+
+.slider1,
+.slider2,
+.slider3 {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for Firefox */
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.slider1:focus-visible ~ .slider-button1 {
+    outline: 2px var(--black-color);
+    outline-offset: 0px;
+}
+.slider2:focus-visible ~ .slider-button2 {
+    outline: 2px var(--black-color);
+    outline-offset: 0px;
+}
+.slider3:focus-visible ~ .slider-button3 {
+    outline: 2px var(--black-color);
+    outline-offset: 0px;
+}
+
+.slider-line1 {
+    position: absolute;
+    inset: 0;
+    width: .1rem;
+    height: 100%;
+    background-color: var(--slider-color);
+    /* z-index: 10; */
+    left: var(--position1);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.slider-line2 {
+    position: absolute;
+    inset: 0;
+    width: .1rem;
+    height: 100%;
+    background-color: var(--slider-color);
+    /* z-index: 10; */
+    left: var(--position2);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.slider-line3 {
+    position: absolute;
+    inset: 0;
+    width: .1rem;
+    height: 100%;
+    background-color: var(--slider-color);
+    /* z-index: 10; */
+    left: var(--position3);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.slider-button1 {
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position1);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+.slider-button2 {
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position2);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+.slider-button3 {
+    position: absolute;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position3);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+/*FIN DU CODE CONCERNANT LES SLIDERS AVANT - APRES*/
+#section3 {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--section3-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.sliderText {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.sliderContainer1,
+.sliderContainer2,
+.sliderContainer3 {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/***********************************************/
+/***********************************************/
+/******************  BRAYWEB    ****************/
+/******************  SECTION  4 ****************/
+/***********************************************/
+/***********************************************/
+
+#section4 {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--section4-color);
+    padding: 1rem;
+}
+
+#section5 {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--section5-color);
+    padding: 1rem;
+}
+
+iframe {
+    border-radius: .5rem;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+
+footer {
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--footer-color);
+    padding-bottom: 1rem;
+}
+
+.bottomFixed {
+    position: fixed;
+    bottom: 0;
+}
+.footerText {
+    color: var(--footerText-Color);
+    font-weight: 100;
+    line-height: 1;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/***********************************************/
+/**************** RESPONSIVE *******************/
+/***************    NAV BAR   ******************/
+/***********************************************/
+/***********************************************/
+/******************* LOGO **********************/
+
+.logo img {
+    width: calc(100px + 2rem); /* COMMENT LUI DONNER UNE TAILLE QUI VA SAGRANDIR AVEC LE VIEWSCREEN */
+    filter: drop-shadow(5px 3px 2px rgba(0, 0, 0, 0.25)) drop-shadow(-1px -1px 1.5px rgba(0, 0, 0, 0));
+    /* border: 1px solid black; */
+    visibility: hidden;
+}
+
+.logo img:hover {
+     width: calc(100px + 2rem);
+     filter: drop-shadow(2px 1px 0px rgba(0, 0, 0, 0.25)) drop-shadow(-1px -1px 1.5px rgba(0, 0, 0, 0));
+     position:relative;
+     left: 1px;
+}
+/****************** UL MENU FONCTION ***********************/
+#volet {                  /* JAVASCRIPT*/
+    display: block; /*none;*/
+    position: fixed;
+    flex-direction: column;
+    width: 220px;
+    top: 15%;
+    left: -100%;     /* left est repositionné à zéro sur un 'iconX.onclick' dans le fichier JAVASCRIPT*/
+    justify-content: space-between; /* Ce flex-end positionne à gauche les liens du menu */
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.1rem;
+    background-color: var(--FEFEFE-color);
+    transition: 200ms;
+}
+
+ul li a {
+    font-size: 1.75rem;
+    font-family: 'ephesis';
+    /* border: 1px solid black; */
+    border-radius: 15px;
+}
+/***********************************************/
+/***********************************************/
+/***************** MEDIA QUERY *****************/
+/******************* >950px ********************/
+/***********************************************/
+/***********************************************/
+
+@media (min-width: 950px) {
+    #volet {
+        display: flex; /*none;*/
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        border: none;
+        border-radius: 20px;
+        background-color: transparent;
+    }
+    ul li a {
+        font-size: 2.5rem;
+        font-family: 'ephesis';
+        /* border: 1px solid black; */
+        border-radius: 15px;
+    }
+    #iconX {
+        display: none;
+        visibility: hidden;
+    }
+
+    #close {
+        display: none;
+        visibility: hidden;
+    }
+}
+/***********************************************/
+/***********************************************/
+/************* FIN DE MEDIA QUERY **************/
+/***********************************************/
+/***********************************************/
+/***********************************************/
