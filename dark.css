@@ -61,7 +61,7 @@ font-family: 'Miltonian', serif;
     --image-magic: url(content/marirederiredorigine.webp);
     --image-planches: url(content/planchesclaires.webp);
     --specialiste-color: rgb(255, 255, 255);
-    --specialiste-background-color: rgba(165, 27, 27, 0.9);
+    --specialiste-background-color: rgb(136, 159, 85);
     --ecriture-parchemin: linear-gradient(
         to right,
         #462523 0,
