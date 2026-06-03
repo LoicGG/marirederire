@@ -119,6 +119,8 @@ nav {
     background-color: var(--section2-color);
     text-align: center;
     padding: 2rem;
+    display: flex;
+    
 }
 
 
@@ -127,7 +129,7 @@ nav {
     background-color: var(--specialiste-background-color);
     font-size: 1.5em;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 0rem;
     line-height: 1;
     width: 80vw;
     font-family: 'Gill Sans';
