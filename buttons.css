@@ -16,7 +16,7 @@
     z-index: -1;
     color: white;
     cursor: pointer;
-    background-color: var(--specialiste-background-color);
+    background-color: var(--specialiste1-background-color);
     border-radius: 10px;
 }
 
