@@ -160,8 +160,8 @@ nav {
     position: relative; /* absolute si on veut mettre le svg sur les bords */
     display: flex;
     flex-direction: column;
-    max-width: 88vw;
-    width: 40vw;
+    max-width: 80vw;
+    width: 400px;
     height: auto;
     margin: 0.75rem;
     box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
