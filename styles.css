@@ -253,10 +253,11 @@ nav {
 }
 
 .exemple1 {
-    font-size: 3rem;
+    font-size: 1.80rem;
+    line-height: 1.5;
     font-family: var(--section2-fontfamily);
     padding: 2rem;
-    text-align: center;
+    text-align: justify;
 }
 
 
