@@ -32,12 +32,41 @@ a, a:visited {
     font-family: 'Ephesis', cursive;
 }
 
+.phraselien {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-family: var(--section2-fontfamily);
+    padding: 1.4rem;
+    text-decoration: underline;
+}
+
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 1rem ;
+}
+
+td {
+    font-family: arial;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
 li {
     list-style: none;
+            font-size: 2rem;
+            font-family: 'Ephesis', cursive;
+            text-decoration: underline;
+
 }
 /*Uniquement pour les liens du menu*/
 li a {
         color: var(--black-color);
+
 }
 
 h2 {
@@ -123,11 +152,12 @@ nav {
 .logo {
     content: url(content/logomarirederirerond.webp);
     position: relative;
-    max-width: 20vw;
+    width: 25vw;
+    max-width: 400px;
     z-index: 1;
     align-items: left;
     padding-left: 1vw;
-    display: flex;
+    display: block;
     justify-content: left;
     
 }
@@ -205,7 +235,7 @@ nav {
     height: 4rem;
     margin: 1rem;
     align-self: center;;
-    content: url(content/iconquisuije.svg);
+    content: url(content/person.svg);
 }
 .iconhoraires {
     height: 4rem;
