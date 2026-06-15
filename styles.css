@@ -58,9 +58,8 @@ td {
 
 li {
     list-style: none;
-            font-size: 2rem;
-            font-family: 'Ephesis', cursive;
-            text-decoration: underline;
+    font-size: 2rem;
+    font-family: 'Ephesis', cursive;
 
 }
 /*Uniquement pour les liens du menu*/
@@ -133,7 +132,8 @@ nav {
     z-index: 2;
 }
 .hero {
-    height: 30vh; 
+    height: 50vh;
+    min-height: 40vw; 
     width: 100%;
     /* border: 1px solid rgb(0, 0, 0); */
     /* background-image: var(--image-heroBg); */
@@ -153,7 +153,7 @@ nav {
     content: url(content/logomarirederirerond.webp);
     position: relative;
     width: 25vw;
-    max-width: 400px;
+    max-width: 300px;
     z-index: 1;
     align-items: left;
     padding-left: 1vw;
@@ -374,9 +374,10 @@ nav {
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
     background-color: var(--section4-color);
-    padding: rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
     background-color: var(--section4-color);
     align-items: center;
 }
