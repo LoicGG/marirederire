@@ -548,7 +548,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-    width: 15vw;
+    width: 15vh;
 }
 
 .insta {
@@ -556,7 +556,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-    width: 15vw;
+    width: 15vh;
 }
 
 
