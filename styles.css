@@ -389,11 +389,14 @@ nav {
     background-color: var(--section4-color);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: row;
     text-align: center;
     background-color: var(--section4-color);
     align-items: center;
 }
+
+
+
 
 .photodemarie {
     width: 90vw;
