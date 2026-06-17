@@ -170,11 +170,12 @@ nav {
     justify-content: right;
     
 }
-
+/********************PHOTO TROP GRANDE trop zoomee******************/
 .herophoto {
     content: url(content/herophoto.webp);
     max-width: 60%;
     z-index: 1;
+    width: 100%;
     align-items: right;
     padding-right: 1vw;
     display: flex;
@@ -310,7 +311,7 @@ nav {
     line-height: 1.5;
     font-family: var(--section2-fontfamily);
     padding: 1.4rem;
-    text-align: justify;
+    text-align: center;
     width: auto;
     height: auto;
     justify-content: center;
