@@ -18,6 +18,7 @@ html {
     box-sizing:border-box;
     font-size: 16px;
     font-family: 'Ephesis', cursive;
+    width: 100%;
 }
 
 body, html {
