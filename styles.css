@@ -19,6 +19,7 @@ html {
     font-size: 16px;
     font-family: 'Ephesis', cursive;
     width: auto;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
