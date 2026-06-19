@@ -52,6 +52,16 @@ table, th, td {
     width: 50vh;
 }
 
+thead {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-family: var(--section2-fontfamily);
+    padding: 1rem;
+    color: rgb(150, 0, 0);
+
+}
+
 th {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -310,10 +320,11 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    
+    width: 90%;
 }
 
 .exemple1 {
+    flex-direction: column;
     font-size: 1.50rem;
     line-height: 1.5;
     font-family: var(--section2-fontfamily);
@@ -322,6 +333,7 @@ nav {
     width: auto;
     height: auto;
     justify-content: center;
+    display: flex;
 }
 
 
@@ -356,7 +368,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -378,6 +390,7 @@ nav {
     color: rgb(150, 0, 0);
     line-height: 1.3;
     margin: 1rem ;
+    display: flex;
 }
 
 
@@ -463,7 +476,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
