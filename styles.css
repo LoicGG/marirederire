@@ -531,10 +531,23 @@ nav {
 
 .reseaux {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
 
+.firstline {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.secondline {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .emailme {
@@ -564,6 +577,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 8vh;
+}
+
+.observa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 
