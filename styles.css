@@ -118,6 +118,7 @@ img {
   }
 
 
+
 /***********************************************/
 /***********************************************/
 /***************** ANIMATIONS ******************/
@@ -473,6 +474,34 @@ nav {
     font-family: var(--section2-fontfamily);
     font-size: 1.75rem;
     text-decoration: underline;
+}
+
+
+.horaires {
+    font-size: 1.50rem;
+    line-height: 1.5;
+    font-family: var(--section2-fontfamily);
+    font-weight: bold;
+    padding: 1.4rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 2rem;;
+}
+
+
+
+.premiereseance {
+    font-size: 1.50rem;
+    line-height: 1.5;
+    font-family: var(--section2-fontfamily);
+    padding: 1.4rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
 
 /***********************************************/
