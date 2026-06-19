@@ -308,9 +308,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 1rem;
     
 }
 
@@ -400,7 +398,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -464,7 +462,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -504,9 +502,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 1rem;
 }
-/*IL FAUT VERIFIER LA POSITION DES RESEAUX SOCIAUX, LEUR TAILLE NEST PAS EGALE PAR AILLEURS*/
 
 .parchment2 {
     position: relative; /* absolute si on veut mettre le svg sur les bords */
@@ -534,7 +530,6 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
     margin: 1rem;
 }
 
@@ -554,9 +549,15 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 12vw;
+    width: 16vw;
 }
 
+.phonelogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 8vh;
+}
 
 .fb {
     display: flex;
